@@ -1,0 +1,67 @@
+production-readiness-checklist
+
+A check point is a stage in the readiness review at which the 
+evaluator examines internal and external cues and "decides" whether or
+not to move forward in the evaluation process of the microservice software (it).
+This check point list contains detailed checklist to run over 
+all microservices—manually or in an automated way.
+
+CHECK POINT - A Production-Ready Service Is Stable and Reliable
+• It has a standardized development cycle.
+• Its code is thoroughly tested through lint, unit, integration, 
+and end-to-end testing.
+• Its test, packaging, build, and release process is completely automated.
+• It has a standardized deployment pipeline, containing staging, canary, 
+and production phases.
+• Its clients are known (Identified Callers of API).
+• Its dependencies are known, and there are backups, alternatives, fallbacks, 
+and caching in place in case of failures.
+• It has stable and reliable routing and discovery in place.
+
+CHECK POINT - A Production-Ready Service Is Scalable and Performant
+• Its qualitative and quantitative growth scales are known.
+• It uses hardware resources efficiently.
+• Its resource bottlenecks and requirements have been identified.
+• Capacity planning is automated and performed on a scheduled basis.
+• Its dependencies will scale with it. 
+• It will scale with its clients.
+• Its traffic patterns are understood.
+• Traffic can be re-routed in case of failures.
+• It is written in a programming language that allows it to 
+be scalable and performant.
+• It handles and processes tasks in a performant manner.
+• It handles and stores data in a scalable and performant way.
+
+CHECK POINT - A Production-Ready Service Is Fault Tolerant and
+Prepared for Any Catastrophe.
+
+• It has no single point of failure.
+• All failure scenarios and possible catastrophes have been identified.
+• It is tested for resiliency through code testing, load testing, and chaos testing.
+• Failure detection and remediation has been automated.
+• There are standardized incident and outage procedures in place within the
+microservice development team and across the organization.
+A Production-Ready Service Is Properly Monitored
+• Its key metrics are identified and monitored at the host, infrastructure, and
+microservice levels.
+• It has appropriate logging that accurately reflects the past states of the microservice.
+• Its dashboards are easy to interpret and contain all key metrics.
+• Its alerts are actionable and are defined by signal-providing thresholds.
+• There is a dedicated on-call rotation responsible for monitoring and 
+responding to any incidents and outages.
+• There is a clear, well-defined, and standardized on-call procedure in place for
+handling incidents and outages.
+
+
+CHECK POINT - A Production-Ready Service Is Documented and Understood
+• It has comprehensive documentation.
+• Its documentation is updated regularly.
+• Its documentation contains a description of the microservice; 
+an architecture diagram; contact and on-call information; 
+links to important information; an onboarding and development guide; 
+information about the service’s request flow(s), endpoints, and dependencies; 
+an on-call runbook; and answers to frequently asked questions.
+• It is well understood at the developer, team, and organizational levels.
+• It is held to a set of production-readiness standards and 
+meets the associated requirements.
+• Its architecture is reviewed and audited frequently.
